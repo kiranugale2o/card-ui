@@ -8,7 +8,7 @@ import { Button } from "../ui/button";
 export default function PaymentCard() {
   return (
     <>
-      <div className="flex border-lg bg-white w-[1000px] flex-col  lg:flex-row lg:px-20 mx-auto px -5  justify-evenly py-20 lg:py-10 ">
+      <div className="flex  bg-white w-full lg:w-[1000px] lg:px-20 px-6  justify-evenly py-20 lg:py-10 ">
         <div className="hidden lg:flex lg:py-6 lg:w-[400px] ">
           <div className="flex item-center text-center gap-5  lg:p-24 lg:px-10 flex-col">
             <svg
@@ -49,7 +49,7 @@ export default function PaymentCard() {
             </svg>
           </div>
         </div>
-        <div className="layout-content-container flex flex-col w-[552px]  lg:py-5 lg:px-5">
+        <div className="layout-content-container flex flex-col w-full lg:w-[552px]  lg:py-5 lg:px-5">
           <h1 className="text-[#111518] text-[28px] font-bold font-sans  ">
             Complete registration payment
           </h1>
@@ -57,49 +57,49 @@ export default function PaymentCard() {
             Personal details
           </p>
           {/* first two inputs */}
-          <div className="flex  flex items-end gap-4  mt-5">
+          <div className="block lg:flex  items-end gap-4  mt-5">
             <div className="flex">
-              <label className="flex flex-col min-w-40 flex-1">
+              <label className="flex flex-col  flex-1">
                 <p className="text-[#111518] text-base ">Address line</p>
 
                 <input
                   type="text"
                   placeholder="P.o.B,1223"
-                  className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111518] focus:outline-0 focus:ring-0 border   h-14 placeholder:text-[#60778a] p-3 text-base font-normal leading-normal"
+                  className="form-input flex w-full  resize-none overflow-hidden rounded-xl text-[#111518] focus:outline-0 focus:ring-0 border   h-14 placeholder:text-[#60778a] p-3 text-base font-normal leading-normal"
                 />
               </label>
             </div>
             <div className="flex ">
-              <label className="flex flex-col min-w-40 ">
+              <label className="flex flex-col  flex-1">
                 <p className="text-[#111518] ">City</p>
                 <input
                   type="text"
                   placeholder="Arusha"
-                  className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111518] focus:outline-0 focus:ring-0 border   h-14 placeholder:text-[#60778a] p-3 text-base font-normal leading-normal"
+                  className="form-input flex w-full  resize-none overflow-hidden rounded-xl text-[#111518] focus:outline-0 focus:ring-0 border   h-14 placeholder:text-[#60778a] p-3 text-base font-normal leading-normal"
                 />
               </label>
             </div>
           </div>
           {/* second two inputs */}
-          <div className="flex  flex items-end gap-4  mt-5">
+          <div className=" block lg:flex items-end gap-4  mt-5">
             <div className="flex">
-              <label className="flex flex-col min-w-40 flex-1">
+              <label className="flex flex-col  flex-1">
                 <p className="text-[#111518] text-base ">State</p>
 
                 <input
                   type="text"
                   placeholder="Arusha,Tanzinia"
-                  className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111518] focus:outline-0 focus:ring-0 border   h-14 placeholder:text-[#60778a] p-3 text-base font-normal leading-normal"
+                  className="form-input flex w-full  resize-none overflow-hidden rounded-xl text-[#111518] focus:outline-0 focus:ring-0 border   h-14 placeholder:text-[#60778a] p-3 text-base font-normal leading-normal"
                 />
               </label>
             </div>
             <div className="flex ">
-              <label className="flex flex-col min-w-40 ">
+              <label className="flex flex-col flex-1 ">
                 <p className="text-[#111518] ">Postal code</p>
                 <input
                   type="number"
                   placeholder="9090"
-                  className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111518] focus:outline-0 focus:ring-0  border h-14 placeholder:text-[#60778a] p-3 text-base font-normal leading-normal"
+                  className="form-input flex w-full  resize-none overflow-hidden rounded-xl text-[#111518] focus:outline-0 focus:ring-0  border h-14 placeholder:text-[#60778a] p-3 text-base font-normal leading-normal"
                 />
               </label>
             </div>
@@ -292,33 +292,33 @@ export default function PaymentCard() {
 
           <div className="text-xl py-5 font-bold">Card details</div>
           <div className="flex flex-col w-full">
-            <label className="flex flex-col min-w-40 ">
+            <label className="flex flex-col  ">
               <p className="text-[#111518] ">Cardholder's name</p>
               <input
                 type="text"
                 placeholder="Seen on your card"
-                className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111518] focus:outline-0 focus:ring-0 border   h-14 placeholder:text-[#60778a] p-3 text-base font-normal leading-normal"
+                className="form-input flex w-full  resize-none overflow-hidden rounded-xl text-[#111518] focus:outline-0 focus:ring-0 border   h-14 placeholder:text-[#60778a] p-3 text-base font-normal leading-normal"
               />
             </label>
 
             <div className="flex mt-5 gap-2">
-              <label className="flex flex-col min-w-40 flex-1">
+              <label className="flex flex-col  flex-1">
                 <p className="text-[#111518] text-base ">Expirity</p>
 
                 <input
                   type="text"
                   placeholder="expirity of card"
-                  className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111518] focus:outline-0 focus:ring-0 border   h-14 placeholder:text-[#60778a] p-3 text-base font-normal leading-normal"
+                  className="form-input flex w-full  resize-none overflow-hidden rounded-xl text-[#111518] focus:outline-0 focus:ring-0 border   h-14 placeholder:text-[#60778a] p-3 text-base font-normal leading-normal"
                 />
               </label>
 
-              <label className="flex flex-col min-w-40 flex-1">
+              <label className="flex flex-col  flex-1">
                 <p className="text-[#111518] text-base ">CVC</p>
 
                 <input
                   type="text"
                   placeholder="eg.,721"
-                  className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111518] focus:outline-0 focus:ring-0 border   h-14 placeholder:text-[#60778a] p-3 text-base font-normal leading-normal"
+                  className="form-input flex w-full  resize-none overflow-hidden rounded-xl text-[#111518] focus:outline-0 focus:ring-0 border   h-14 placeholder:text-[#60778a] p-3 text-base font-normal leading-normal"
                 />
               </label>
             </div>
