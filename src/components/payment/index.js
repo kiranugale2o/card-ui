@@ -105,7 +105,7 @@ export default function PaymentCard() {
             </div>
           </div>
           <div className="text-xl py-5 font-bold">Payment Methods</div>
-          <div className="flex mt-2 gap-3 ">
+          <div className="flex mt-2 gap-2 lg:gap-3 ">
             <div className="logo1 flex">
               <svg
                 width="54"
