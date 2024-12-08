@@ -8,7 +8,7 @@ import { Button } from "../ui/button";
 export default function PaymentCard() {
   return (
     <>
-      <div className="flex bg-white w-[1000px] flex-col  lg:flex-row lg:px-20 mx-auto px -5  justify-evenly py-20 lg:py-10 ">
+      <div className="flex border-lg bg-white w-[1000px] flex-col  lg:flex-row lg:px-20 mx-auto px -5  justify-evenly py-20 lg:py-10 ">
         <div className="hidden lg:flex lg:py-6 lg:w-[400px] ">
           <div className="flex item-center text-center gap-5  lg:p-24 lg:px-10 flex-col">
             <svg
